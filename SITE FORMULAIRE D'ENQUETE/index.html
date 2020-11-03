@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<hrml lang="EN">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+
+        <title>hommagea F.H.B</title>
+    </head>
+    <body >
+        <div class="heading">
+            <h1>Le formulaire d'Enquete </h1>
+        <p> <em>la realisation dune etude de </em></p>
+        </div>
+        
+        <div id="main">
+           
+                <form id="survey-form" method="POST" action="test.php">
+                    <p class="paragrapheun">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="ex: yeo" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: exemple@gmail.com" required>
+                        <label for="age">Age(e)</label>
+                        <input type="number" name="number" id="nunmber" min="0" max="50" step="1" required>
+                    </p>
+                    <P class="paragraphedeux">
+                        <label for="pays">dans quel pays habitez vous?</label>
+                        <select id="dropdown">
+                            <option value="COTE D'IVOIRE">COTE D'IVOIRE </option>
+                            <option value="FRANCE">FRANCE</option>
+                            <option value="GUINEE">GUINNE</option>
+                            <option value="MALI">MALI</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </p>
+                    <p class="paragraphetrois">
+                        <fieldset>
+                            <legend>recommandation</legend>
+                         Would you recommend freeCodeCamp to a friend?<br>
+                        <input type="radio" name="avis" id="maybe" autofocus>
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" name="avis" id="definitely">
+                        <label for="maybe">Definitely</label>
+                        <input type="radio" name="avis" id="definitely">
+                        <label for="maybe">Not SURE</label>
+                    </fieldset>
+                    </p>
+                    <P class="paragraphequatre">
+                    What would you like to see improved? (Check all that apply)<br>
+                        <input type="checkbox" id="choix" value="choix1" checked>
+                        <label> Front-end Projects</label><br>
+                        <input type="checkbox" id="choix" value="choix2">
+                        <label> choix2</label><br>
+                        <input type="checkbox" id="choix" value="choix3">
+                        <label> choix3</label><br>
+                        <input type="checkbox" id="choix" value="choix4">
+                        <label> choix4</label>
+                    </P>
+                    <p class="paragraphe5">
+                        <label>comment pensez vous que je peux amelioere mon site</label>
+                        <textarea rows="10" cols="10" required>
+                                vous pourvez ajouter quelque chose ici
+                        </textarea>
+                    </p>
+                    <p class="paragraphe6">
+                        <input type="submit" value="submit" id="submit"/>
+                    </p>
+                </form>
+        </div>
+
+    </body>
+
+
+
+
+</hrml>
